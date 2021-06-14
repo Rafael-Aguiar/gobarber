@@ -10,5 +10,7 @@ class Appointment {
   provider: string;
 
   @Column('timestamp with time zone')
-  date: Date
+  date: Date;
 }
+
+export default Appointment;
