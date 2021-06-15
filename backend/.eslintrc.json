@@ -24,6 +24,10 @@
       2,
       "single"
     ],
+    "semi": [
+      2,
+      "always"
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
