@@ -16,7 +16,7 @@ export default class AlterProviderFieldToProviderId1623804875902 implements Migr
     await queryRunner.createForeignKey(
       'appointments',
       new TableForeignKey({
-        name: 'AppointmenteProvider',
+        name: 'AppointmentProvider',
         columnNames: ['provider_id'],
         referencedColumnNames: ['id'],
         referencedTableName: 'users',

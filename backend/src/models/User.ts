@@ -1,6 +1,12 @@
-import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+  UpdateDateColumn
+} from 'typeorm';
 
-@Entity('appointments')
+@Entity('users')
 class User {
 
   @PrimaryGeneratedColumn('uuid')
@@ -9,18 +15,17 @@ class User {
   @Column()
   name: string;
 
-  @Column('timestamp with time zone')
+  @Column()
   email: string;
 
-  @Column('timestamp with time zone')
+  @Column()
   password: string;
 
   @CreateDateColumn()
-  createdAt: Date;
+  created_at: Date;
 
   @UpdateDateColumn()
-  updatedAt: Date;
-
+  updated_at: Date;
 }
 
 export default User;
